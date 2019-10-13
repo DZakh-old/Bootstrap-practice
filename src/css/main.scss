@@ -5,25 +5,8 @@
 @import './variables';
 @import './preset';
 @import './animations';
+@import './components';
 
-
-/* ___ MIXIN ___ */
-@mixin background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -10;
-}
-@mixin centralize {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 
@@ -45,19 +28,18 @@
   position: relative;
 
   &__background {
-    @include background;
+    @extend %bg-img;
   }
 }
 
 
 /* === Masthead === */
 .masthead {
-  @include centralize;
-  height: 77px;
+  height: 75px;
   background: rgba(0, 0, 0, 0.25);
 
   &__inner > div {
-    @include centralize;
+    @extend %centralize;
     height: 100%;
   }
 
@@ -98,9 +80,8 @@
     }
     &::before,
     &::after {
+      @extend %pseudo;
       width: $burger-size;
-      content: "";
-      display: block;
     }
     &,
     &::before,
@@ -113,6 +94,9 @@
     }
   }
 
+  &:focus * {
+    transform: scale(1.075);
+  }
   &.active &-btn {
     background: rgba(255,255,255,0);
   }
@@ -172,6 +156,7 @@
   &::before {
     font-family: 'icomoon';
     display: block;
+    color: white;
     font-size: 1.5em;
     content: '\2335';
     line-height: 42px;
@@ -188,6 +173,11 @@
   &:hover::before,
   &:focus::before {
     animation: fromTopToBottom 0.3s forwards;
+    color: $dark-blue-color;
+  }
+  &:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
   }
 }
 
@@ -224,6 +214,39 @@
       font-size: 32rem;
       letter-spacing: 9rem;
       margin-left: 9rem;
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .masthead__telephones {
+    display: flex !important;
+  }
+  .telephones {
+    position: relative;
+    font-size: 16rem;
+    line-height: 1.4em;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    &__number {
+      @include underline(white);
+    }
+    &::before {
+      display: block;
+      font-family: 'icomoon';
+      content: "\e900";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -38px;
+      margin: auto;
+      line-height: 24px;
+      font-size: 14px;
+      height: 26px;
+      width: 26px;
+      border-radius: 50%;
+      text-align: center;
+      color: $light-blue-color;
+      border: 1.5px dashed $light-blue-color;
     }
   }
 }

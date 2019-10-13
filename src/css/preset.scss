@@ -5,7 +5,6 @@ html {
 	margin: 0;
 	padding: 0;
   box-sizing: border-box;
-  color: inherit;
 }
 img {
 	// color: inherit;
@@ -17,8 +16,8 @@ ul {
 	list-style: none;
 }
 a {
-	text-decoration: inherit;
-	// color: inherit;
+	text-decoration: inherit !important;
+  color: inherit !important;
 	display: inline-block;
 }
 button {
