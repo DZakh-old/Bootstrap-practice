@@ -1,5 +1,5 @@
 import "@babel/polyfill";
-
+import $ from "jquery";
 import 'normalize.css';
 import 'bootstrap';
 import "./fonts/stylesheet.css";

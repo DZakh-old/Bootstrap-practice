@@ -1,4 +1,5 @@
-@import './custom-bootstrap';
+@import './custom';
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import './variables';
 @import './preset';
 
@@ -56,20 +57,21 @@
     @include centralize;
     height: 100%;
   }
+
   &__logo {
     background: #23aae2;
     padding: 10px 0;
-    
     &-img {
       width: auto;
       height: auto;
       max-height: 40px;
     }
-  }  
+  }
 }
 
 
 /* === Burger === */
+/* uncss:ignore start */
 .burger {
   position: relative;
   cursor: pointer;
@@ -106,18 +108,18 @@
       height:  $burger-size / 5 - 0.33px;
       transition: all .3s ease-in-out;
     }
+  }
 
-    // TODO: Active doesn't work
-    // &[data-state=menu-on] {
-    //   background: rgba(255,255,255,0);
-    // }
-    // &[data-state=menu-on]::after {
-    //   transform: rotate(-45deg);
-    //   bottom: 0;
-    // }
-    // &[data-state=menu-on]::before {
-    //   transform: rotate(45deg);
-    //   top: 0;
-    // }
+  &.active &-btn {
+    background: rgba(255,255,255,0);
+  }
+  &.active &-btn::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  &.active &-btn::before {
+    transform: rotate(45deg);
+    top: 0;
   }
 }
+/* uncss:ignore end */
