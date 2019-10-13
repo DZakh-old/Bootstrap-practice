@@ -1,7 +1,123 @@
-// @import "custom";
-@import "../../node_modules/bootstrap/scss/bootstrap";
+@import './custom-bootstrap';
+@import './variables';
+@import './preset';
 
 
+
+/* ___ MIXIN ___ */
+@mixin background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+@mixin centralize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ___ PAGE ___ */
 .page {
-  background: #000;
+  font-family: "Museo Sans", sans-serif;
+	color: white;
+	background: white;
+  min-width: 300px;
+}
+
+
+
+/* ___ FIRST ___ */
+.first {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+
+  &__background {
+    @include background;
+  }
+}
+
+
+/* === Masthead === */
+.masthead {
+  @include centralize;
+  height: 77px;
+  background: rgba(0, 0, 0, 0.25);
+
+  &__inner > div {
+    @include centralize;
+    height: 100%;
+  }
+  &__logo {
+    background: #23aae2;
+    padding: 10px 0;
+    
+    &-img {
+      width: auto;
+      height: auto;
+      max-height: 40px;
+    }
+  }  
+}
+
+
+/* === Burger === */
+.burger {
+  position: relative;
+  cursor: pointer;
+  $burger-size: 25px;
+  width: $burger-size;
+  height: $burger-size;
+
+  &-btn {
+    width: 100%;
+    top: 50%;
+    right: 0;
+    margin-top: -$burger-size / 10;
+    margin-bottom: -$burger-size / 10;
+    opacity: 1;
+
+    &::before {
+      top: $burger-size / 2.5 + 0.5px;
+    }
+    &::after {
+      bottom: $burger-size / 2.5 + 0.5px;
+    }
+    &::before,
+    &::after {
+      width: $burger-size;
+      content: "";
+      display: block;
+    }
+    &,
+    &::before,
+    &::after {
+      position: absolute;
+      background: rgba(255,255,255);
+      border-radius: 0.75px;
+      height:  $burger-size / 5 - 0.33px;
+      transition: all .3s ease-in-out;
+    }
+
+    // TODO: Active doesn't work
+    // &[data-state=menu-on] {
+    //   background: rgba(255,255,255,0);
+    // }
+    // &[data-state=menu-on]::after {
+    //   transform: rotate(-45deg);
+    //   bottom: 0;
+    // }
+    // &[data-state=menu-on]::before {
+    //   transform: rotate(45deg);
+    //   top: 0;
+    // }
+  }
 }

@@ -1,0 +1,41 @@
+html {
+  font-size: 1px;
+}
+* {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+img {
+	// color: inherit;
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: inherit;
+	// color: inherit;
+	display: inline-block;
+}
+button {
+  // color: inherit;
+  font-size: inherit;
+  background: inherit;
+  border: inherit;
+}
+a, button {
+  pointer-events: auto;
+  cursor: pointer;
+}
+:focus {
+  outline: 0;
+}
+
+.container,
+.row {
+  height: 100%;
+}
