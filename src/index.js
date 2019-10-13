@@ -13,5 +13,5 @@ import "./js/functions/burger-menu";
 // import "./js/functions/smooth-scroll-to";
 
 /* === Packedges === */
-// import "lazysizes";
-// import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import "lazysizes";
+import "lazysizes/plugins/parent-fit/ls.parent-fit";

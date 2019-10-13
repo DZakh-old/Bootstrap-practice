@@ -15,7 +15,43 @@
       <div class="masthead__container container">
         <div class="masthead__inner row">
           <div class="masthead__logo col-4 col-sm-3 col-lg-2">
-            <img src="./images/first/logo.png" alt="Логотип турфирмы Compas" class="masthead__logo-img">
+            <picture>
+              <source srcset="./images/first/logo.webp" type="image/webp">
+              <source srcset="./images/first/logo.png" type="image/png">
+              <img src="./images/first/logo.png" class="masthead__logo-img lazyload"
+                    alt="Логотип агенства по переезду в Болгарию Compas">
+            </picture>
+          </div>
+          <div class="masthead__navigation d-none">
+            <nav>
+              <ul class="navigation">
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">
+                    Главная
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">
+                    О компании
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">
+                    Внж и пнж в Болгарии
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">
+                    Недвижимость и переезд
+                  </a>
+                </li>
+                <li class="navigation__item">
+                  <a href="" class="navigation__link">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
           <div class="masthead__telephones d-none col-3 col-lg-2 ml-auto">
             <div class="telephones">
@@ -47,7 +83,24 @@
       </div>
     </div>
     <button class="arrow-to-down" aria-label="Стрелка вниз на следующую секцию"></button>
-    <img src="./images/first/background.jpg" alt="Фантастический солнечный берег Болгарии для туризма" class="first__background">
+    <picture>
+      <source media="(min-width: 800px)"
+              srcset="./images/first/background-1920w-min.webp" type="image/webp"
+         data-srcset="./images/first/background-1920w-1x.webp 1x,
+                      ./images/first/background-1920w-2x.webp 2x">
+      <source srcset="./images/first/background-754w-min.webp" type="image/webp"
+         data-srcset="./images/first/background-754w-1x.webp 1x,
+                      ./images/first/background-754w-2x.webp 2x">
+      <source media="(min-width: 800px)"
+              srcset="./images/first/background-1920w-min.jpg" type="image/jpeg"
+         data-srcset="./images/first/background-1920w-1x.jpg 1x,
+                      ./images/first/background-1920w-2x.jpg 2x">
+      <source srcset="./images/first/background-754w-min.jpg" type="image/jpeg"
+         data-srcset="./images/first/background-754w-1x.jpg 1x,
+                      ./images/first/background-754w-2x.jpg 2x">
+      <img src="./images/first/background-1920w-2x.jpg" class="first__background lazyload"
+            alt="Фантастический солнечный берег Болгарии для туризма">
+    </picture>
   </header>
 
   <script src="./index.js"></script>
