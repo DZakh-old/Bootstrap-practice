@@ -1,8 +1,10 @@
+@import '../fonts/stylesheet.css';
+@import '../icons/style.css';
 @import './custom';
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import './variables';
 @import './preset';
-
+@import './animations';
 
 
 /* ___ MIXIN ___ */
@@ -39,6 +41,7 @@
 .first {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  min-height: 285px;
   position: relative;
 
   &__background {
@@ -123,3 +126,104 @@
   }
 }
 /* uncss:ignore end */
+
+
+/* === Title === */
+.title {
+  flex: 1;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 10.5vw;
+    letter-spacing: 4vw;
+    margin-left: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  &__caption {
+    display: block;
+    font-size: 7vw;
+    letter-spacing: 2vw;
+    margin-left: 2vw;
+    margin-top: 0.22em;
+  }
+}
+
+
+/* === Arrow to down === */
+.arrow-to-down {
+	margin-bottom: 68px;
+	height: 42px;
+  width: 42px;
+  align-self: center;
+	font-size: 18em;
+  border-radius: 50%;
+  border: 1.5px dashed #fff;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0);
+	overflow: hidden;
+  transition: all 0.3s;
+  
+  &::before {
+    font-family: 'icomoon';
+    display: block;
+    font-size: 1.5em;
+    content: '\2335';
+    line-height: 42px;
+  }
+
+  /* Animation */
+  &:hover,
+  &:focus {
+    background: white;
+    color: black;
+    box-shadow: 0 0 0 8px rgba(255,255,255,0.2);
+    border-color: transparent;
+  }
+  &:hover::before,
+  &:focus::before {
+    animation: fromTopToBottom 0.3s forwards;
+  }
+}
+
+
+/* === Media === */
+
+/* Height optimization */
+@media (max-height: 600px) {
+  .title__inner {
+    padding-bottom: 20px;
+  }
+  .arrow-to-down {
+    margin-bottom: 40px;
+  }
+}
+@media (max-height: 400px) {
+  .title__inner {
+    padding-bottom: 5px;
+  }
+  .arrow-to-down {
+    margin-bottom: 30px;
+  }
+}
+
+/* Width */
+@include media-breakpoint-up(sm) {
+  .title {
+    &__heading {
+      font-size: 46rem;
+      letter-spacing: 22rem;
+      margin-left: 22rem;
+    }
+    &__caption {
+      font-size: 32rem;
+      letter-spacing: 9rem;
+      margin-left: 9rem;
+    }
+  }
+}

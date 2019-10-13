@@ -31,8 +31,9 @@ a, button {
   pointer-events: auto;
   cursor: pointer;
 }
+
 :focus {
-  outline: 0;
+  outline: 0 !important;
 }
 
 .container,
