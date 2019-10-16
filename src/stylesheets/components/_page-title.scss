@@ -1,0 +1,85 @@
+/* === Title === */
+.title {
+  flex: 1;
+  &__inner {
+    @include center;
+    padding-bottom: 40px;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 10.5vw;
+    letter-spacing: 4vw;
+    margin-left: 4vw;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  &__caption {
+    display: block;
+    font-size: 7vw;
+    letter-spacing: 2vw;
+    margin-left: 2vw;
+    margin-top: 0.25em;
+  }
+}
+
+@media (max-height: 600px) {
+  .title__inner {
+    padding: 0 !important;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .title {
+    &__heading {
+      font-size: 46rem;
+      letter-spacing: 22rem;
+      margin-left: 22rem;
+    }
+    &__caption {
+      font-size: 32rem;
+      letter-spacing: 9rem;
+      margin-left: 9rem;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .title {
+    &__inner {
+      padding-top: 50px;
+      padding-bottom: 0;
+    }
+    &__heading {
+      font-size: 55rem;
+      letter-spacing: 32rem;
+      margin-left: 32rem;
+    }
+    &__caption {
+      font-size: 39rem;
+      letter-spacing: 11rem;
+      margin-left: 11rem;
+      margin-top: 0.3em;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @media (min-height: 400px) {
+    .title {
+      &__inner {
+        padding-top: 30px;
+      }
+      &__heading {
+        font-size: 72rem;
+        letter-spacing: 47rem;
+        margin-left: 47rem;
+      }
+      &__caption {
+        font-size: 44rem;
+        letter-spacing: 14rem;
+        margin-left: 14rem;
+        margin-top: 0.4em;
+      }
+    }
+  }
+}

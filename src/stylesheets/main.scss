@@ -26,7 +26,12 @@
 
 // 5. Components
 @import
-  'components/button';
+  'components/masthead',
+  'components/navigation',
+  'components/telephones',
+  'components/burger',
+  'components/page-title',
+  'components/arrow-to-down';
 
 // 6. Page-specific styles
 @import

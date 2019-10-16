@@ -5,7 +5,6 @@
 
 
 /// Make a context based selector a little more friendly
-/// @author Hugo Giraudel
 /// @param {String} $context
 @mixin when-inside($context) {
   #{$context} & {
@@ -16,8 +15,8 @@
 
 
 /// Place child img as a full screen background
-/// @author Dmitry Zakh
 @mixin full-screen-bg {
+  position: relative;
   &__background {
     position: absolute;
     top: 0;
@@ -34,7 +33,6 @@
 
 
 /// Center children vertically, horizontally or both
-/// @author Vangel Tzo, Dmitry Zakh
 /// @param {String} $position
 @mixin center($position: both) {
   display: flex;
@@ -54,7 +52,6 @@
 
 
 /// Appearing underline on hover
-/// @author Dmitry Zakh
 /// @param {String} $underline-color
 @mixin underline($underline-color: white) {
   position: relative;
@@ -82,4 +79,13 @@
   &:active::after {
     transform: scaleX(1.05);
   }
+}
+
+
+
+/// Works in tandem with the real-vh-height.js function to display sections correctly on mobiles
+/// @param {Number} $height
+@mixin real-vh-height($height: 100) {
+  height: #{$height}vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * #{$height});
 }

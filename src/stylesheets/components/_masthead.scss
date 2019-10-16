@@ -1,0 +1,19 @@
+.masthead {
+  height: 75px;
+  background: rgba(0, 0, 0, 0.25);
+
+  &__inner > div {
+    @include center;
+    height: 100%;
+  }
+
+  &__logo {
+    background: $second-brand-color;
+    padding: 10px 0;
+    &-img {
+      width: auto;
+      height: auto;
+      max-height: 40px;
+    }
+  }
+}

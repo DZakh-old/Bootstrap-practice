@@ -1,0 +1,53 @@
+/* uncss:ignore start */
+.burger {
+  position: relative;
+  $burger-size: 25px;
+  width: $burger-size;
+  height: $burger-size;
+
+  &-btn {
+    width: 100%;
+    top: 50%;
+    right: 0;
+    margin-top: -$burger-size / 10;
+    margin-bottom: -$burger-size / 10;
+    opacity: 1;
+
+    &::before {
+      top: $burger-size / 2.5 + 0.5px;
+    }
+    &::after {
+      bottom: $burger-size / 2.5 + 0.5px;
+    }
+    &::before,
+    &::after {
+      @extend %pseudo;
+      width: $burger-size;
+    }
+    &,
+    &::before,
+    &::after {
+      position: absolute;
+      background: rgba(255,255,255);
+      border-radius: 0.75px;
+      height:  $burger-size / 5 - 0.33px;
+      transition: all .3s ease-in-out;
+    }
+  }
+
+  &:focus * {
+    transform: scale(1.075);
+  }
+  &.active &-btn {
+    background: rgba(255,255,255,0);
+  }
+  &.active &-btn::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+  &.active &-btn::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+}
+/* uncss:ignore end */

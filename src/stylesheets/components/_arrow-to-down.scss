@@ -1,0 +1,50 @@
+.arrow-to-down {
+	margin-bottom: 68px;
+	height: 42px;
+  width: 42px;
+  align-self: center;
+	font-size: 18em;
+  border-radius: 50%;
+  border: 1.5px dashed #fff;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0);
+	overflow: hidden;
+  transition: all 0.3s;
+  &::before {
+    font-family: 'icomoon';
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    content: '\2335';
+    line-height: 42px;
+  }
+
+  /* Animation */
+  &:hover,
+  &:focus {
+    background: white;
+    color: black;
+    box-shadow: 0 0 0 8px rgba(255,255,255,0.2);
+    border-color: transparent;
+  }
+  &:hover::before,
+  &:focus::before {
+    animation: fromTopToBottom 0.3s forwards;
+    color: $brand-color;
+  }
+  &:active {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
+  }
+}
+
+@media (max-height: 600px) {
+  .arrow-to-down {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-height: 400px) {
+  .arrow-to-down {
+    margin-bottom: 30px;
+  }
+}

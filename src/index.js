@@ -9,7 +9,7 @@ import 'bootstrap';
 // import {log} from "./js/helpers"
 
 /* === Functions === */
-import "./js/functions/correct-view";
+import "./js/functions/real-vh-height";
 import "./js/functions/burger-menu";
 // import "./js/functions/smooth-scroll-to";
 
