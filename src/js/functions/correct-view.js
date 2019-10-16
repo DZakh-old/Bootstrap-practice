@@ -1,3 +1,5 @@
+setTimeout(firstViewportCorrection(), 0);
+
 function firstViewportCorrection() {
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     correctSizing();
@@ -13,6 +15,7 @@ function firstViewportCorrection() {
 
 function correctSizing() {
   const vh = window.innerHeight;
-  if (vh > window.screen.height) vh /= window.devicePixelRatio;
+  if (vh > window.screen.height) 
+    vh /= window.devicePixelRatio;
   document.documentElement.style.setProperty('--vh', `${vh * 0.01}px`);
 }

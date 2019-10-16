@@ -1,10 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
 .first {
   height: 100vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * 100);
+  color: #fff;
   min-height: 300px;
   letter-spacing: 0.5rem;
   position: relative;
-  @include bg-img;
+  @include full-screen-bg;
 }
 
 
@@ -14,7 +19,7 @@
   background: rgba(0, 0, 0, 0.25);
 
   &__inner > div {
-    @extend %centralize;
+    @include center;
     height: 100%;
   }
 
@@ -146,7 +151,7 @@
   &:hover::before,
   &:focus::before {
     animation: fromTopToBottom 0.3s forwards;
-    color: $dark-blue-color;
+    color: $brand-color;
   }
   &:active {
     transform: scale(1.05);
@@ -214,8 +219,8 @@
       width: 26px;
       border-radius: 50%;
       text-align: center;
-      color: $light-blue-color;
-      border: 1.5px dashed $light-blue-color;
+      color: $second-brand-color;
+      border: 1.5px dashed $second-brand-color;
     }
   }
   .title {

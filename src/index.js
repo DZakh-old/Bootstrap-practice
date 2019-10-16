@@ -1,6 +1,7 @@
+import "./stylesheets/main.scss";
+
 import "@babel/polyfill";
-import 'normalize.css';
-import "./css/main.scss";
+
 import 'bootstrap';
 
 
