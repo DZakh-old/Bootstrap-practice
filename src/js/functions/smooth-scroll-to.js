@@ -1,5 +1,5 @@
-const processInnerLinkClick = () => {
-  const links = document.querySelectorAll(".navigation__item-link,.first__arrow-to-down");
+(function processInnerLinkClick() {
+  const links = document.querySelectorAll(".smooth-scroll-to");
   for (const link of links) {
     link.addEventListener("click", e => {
       // console.log("clicked");
@@ -8,7 +8,7 @@ const processInnerLinkClick = () => {
       smoothScrollTo(e.target.dataset.id);
     });
   };
-};
+})();
 
 const smoothScrollTo = (elementId) => {
   // console.log(elementId);
@@ -18,7 +18,3 @@ const smoothScrollTo = (elementId) => {
     behavior: 'smooth'
   });
 };
-
-
-
-processInnerLinkClick();
