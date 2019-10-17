@@ -32,13 +32,13 @@
   .title {
     &__heading {
       font-size: 46rem;
-      letter-spacing: 22rem;
-      margin-left: 22rem;
+      letter-spacing: 0.55em;
+      margin-left: 0.55em;
     }
     &__caption {
       font-size: 32rem;
-      letter-spacing: 9rem;
-      margin-left: 9rem;
+      letter-spacing: 0.28em;
+      margin-left: 0.28em;
     }
   }
 }
@@ -51,13 +51,9 @@
     }
     &__heading {
       font-size: 55rem;
-      letter-spacing: 32rem;
-      margin-left: 32rem;
     }
     &__caption {
       font-size: 39rem;
-      letter-spacing: 11rem;
-      margin-left: 11rem;
       margin-top: 0.3em;
     }
   }
@@ -71,13 +67,9 @@
       }
       &__heading {
         font-size: 72rem;
-        letter-spacing: 47rem;
-        margin-left: 47rem;
       }
       &__caption {
         font-size: 44rem;
-        letter-spacing: 14rem;
-        margin-left: 14rem;
         margin-top: 0.4em;
       }
     }

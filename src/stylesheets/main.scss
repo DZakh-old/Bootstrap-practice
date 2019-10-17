@@ -22,7 +22,8 @@
 
 // 4. Layout-related sections
 @import
-  'layout/first';
+  'layout/first',
+  'layout/advantages';
 
 // 5. Components
 @import
@@ -31,7 +32,8 @@
   'components/telephones',
   'components/burger',
   'components/page-title',
-  'components/arrow-to-down';
+  'components/arrow-to-down',
+  'components/advantage';
 
 // 6. Page-specific styles
 @import
