@@ -1,0 +1,27 @@
+.offer {
+  @include full-screen-bg;
+  background: $brand-color;
+  color: #fff;
+  padding-top: 80rem;
+  padding-bottom: 87rem;
+  text-align: center;
+
+  &__content {
+    margin: auto;
+  }
+  &__quote {
+    padding-top: 27rem;
+    padding-bottom: 45rem;
+  }
+  &__our-answer {
+    padding-top: 50rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .offer {
+    padding-top: 87rem;
+    padding-bottom: 97rem;
+    background: none;
+  }
+}

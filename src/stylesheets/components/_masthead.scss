@@ -1,5 +1,5 @@
 .masthead {
-  height: 75px;
+  height: 75rem;
   background: rgba(0, 0, 0, 0.25);
 
   &__inner > div {
@@ -9,11 +9,11 @@
 
   &__logo {
     background: $second-brand-color;
-    padding: 10px 0;
+    padding: 10rem 0;
     &-img {
       width: auto;
       height: auto;
-      max-height: 40px;
+      max-height: 40rem;
     }
   }
 }

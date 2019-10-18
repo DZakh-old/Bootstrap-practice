@@ -1,18 +1,25 @@
 .advantages {
-  padding-top: 50px;
-  padding-bottom: 80px;
+  padding-top: 50rem;
+  padding-bottom: 80rem;
 
   &__list {
-    margin-top: 27px;
+    margin-top: 27rem;
   }
 }
 
 @include media-breakpoint-up(md) {
   .advantages {
-    padding-top: 70px;
+    padding-top: 70rem;
 
     &__list {
-      margin-top: 50px;
+      margin-top: 50rem;
     }
+  }
+}
+
+// Decrease heading's size on small screens
+@media (max-width: 425px) {
+  .advantages__heading {
+    font-size: 8.5vw;
   }
 }

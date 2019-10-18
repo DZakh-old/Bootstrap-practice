@@ -82,6 +82,17 @@
 }
 
 
+/// Decorative circle with an arrow inside
+@mixin decorative-circle {
+  height: $decorative-circle-size;
+  width: $decorative-circle-size;
+  line-height: $decorative-circle-size;
+  border: 1rem dashed #fff;
+  border-radius: 50%;
+  font-family: 'icomoon';
+  content: '\e901';
+}
+
 
 /// Works in tandem with the real-vh-height.js function to display sections correctly on mobiles
 /// @param {Number} $height

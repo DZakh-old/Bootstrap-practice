@@ -1,12 +1,12 @@
 .arrow-to-down {
-	margin-bottom: 68px;
-	height: 42px;
-  width: 42px;
+	margin-bottom: 68rem;
+	height: 42rem;
+  width: 42rem;
   align-self: center;
 	font-size: 18rem;
   border-radius: 50%;
-  border: 1.5px dashed #fff;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0);
+  border: 1.5rem dashed #fff;
+  box-shadow: 0 0 0 1rem rgba(255,255,255,0);
 	overflow: hidden;
   transition: all 0.3s;
   &::before {
@@ -15,7 +15,7 @@
     color: #fff;
     font-size: 1.5em;
     content: '\2335';
-    line-height: 42px;
+    line-height: 42rem;
   }
 
   /* Animation */
@@ -23,7 +23,7 @@
   &:focus {
     background: #fff;
     color: black;
-    box-shadow: 0 0 0 8px rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 8rem rgba(255,255,255,0.2);
     border-color: transparent;
   }
   &:hover::before,
@@ -33,18 +33,18 @@
   }
   &:active {
     transform: scale(1.05);
-    box-shadow: 0 0 0 10px rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 10rem rgba(255,255,255,0.2);
   }
 }
 
 @media (max-height: 600px) {
   .arrow-to-down {
-    margin-bottom: 40px;
+    margin-bottom: 40rem;
   }
 }
 
 @media (max-height: 400px) {
   .arrow-to-down {
-    margin-bottom: 30px;
+    margin-bottom: 30rem;
   }
 }

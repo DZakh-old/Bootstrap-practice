@@ -1,7 +1,7 @@
 /* uncss:ignore start */
 .burger {
   position: relative;
-  $burger-size: 25px;
+  $burger-size: 25rem;
   width: $burger-size;
   height: $burger-size;
 
@@ -14,10 +14,10 @@
     opacity: 1;
 
     &::before {
-      top: $burger-size / 2.5 + 0.5px;
+      top: $burger-size / 2.5 + 0.5rem;
     }
     &::after {
-      bottom: $burger-size / 2.5 + 0.5px;
+      bottom: $burger-size / 2.5 + 0.5rem;
     }
     &::before,
     &::after {
@@ -29,8 +29,8 @@
     &::after {
       position: absolute;
       background: rgba(255,255,255);
-      border-radius: 0.75px;
-      height:  $burger-size / 5 - 0.33px;
+      border-radius: 0.75rem;
+      height:  $burger-size / 5 - 0.33rem;
       transition: all .3s ease-in-out;
     }
   }

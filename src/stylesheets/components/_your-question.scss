@@ -1,0 +1,37 @@
+.your-question {
+  border: 1rem dashed #fff;
+  padding: 40rem 40rem 45rem;
+  text-transform: uppercase;
+  position: relative;
+
+  &__entry {
+    font-size: 1.1em;
+    font-weight: lighter;
+    letter-spacing: 0.12em;
+    line-height: 1.9em;
+  }
+  &__question {
+    font-size: 1.35em;
+    font-weight: bold;
+    letter-spacing: 0.09em;
+    line-height: 1.5em;
+  }
+
+  &::before,
+  &::after {
+    @include decorative-circle;
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+  }
+  &::before {
+    top: -$decorative-circle-size / 2;
+    background: #213646;
+  }
+  &::after {
+    bottom: -$decorative-circle-size / 2;
+    background: #233d53;
+  }
+}

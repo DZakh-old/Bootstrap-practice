@@ -23,7 +23,8 @@
 // 4. Layout-related sections
 @import
   'layout/first',
-  'layout/advantages';
+  'layout/advantages',
+  'layout/offer';
 
 // 5. Components
 @import
@@ -33,7 +34,11 @@
   'components/burger',
   'components/page-title',
   'components/arrow-to-down',
-  'components/advantage';
+  'components/advantage',
+  'components/quote',
+  'components/your-question',
+  'components/our-answer',
+  'components/learn-more-btn';
 
 // 6. Page-specific styles
 @import

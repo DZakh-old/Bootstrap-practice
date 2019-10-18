@@ -1,0 +1,25 @@
+.our-answer {
+  max-width: 360rem;
+  margin: auto;
+  
+  &__title {
+    letter-spacing: 0.15em;
+    font-size: 33rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  &__offer {
+    letter-spacing: 0.09em;
+    font-weight: lighter;
+    padding-top: 0.2em;
+  }
+  &__learn-more-btn {
+    margin-top: 38rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .our-answer {
+    max-width: 100%;
+  }
+}

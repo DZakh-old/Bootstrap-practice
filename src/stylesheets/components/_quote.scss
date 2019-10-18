@@ -1,0 +1,16 @@
+.quote {
+  max-width: 350rem;
+  margin: auto;
+
+  &__text {
+    font-weight: lighter;
+    font-style: italic;
+  }
+  &__author {
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 0.13em;
+  }
+}
