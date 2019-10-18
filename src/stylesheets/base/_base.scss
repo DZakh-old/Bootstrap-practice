@@ -28,7 +28,7 @@ html {
  * My reset
  */
  body {
-   min-width: 320px;
+   min-width: 340px;
  }
  img {
   // color: inherit;
@@ -40,9 +40,14 @@ ul {
 	list-style: none;
 }
 a {
-	text-decoration: inherit !important;
-  color: inherit !important;
+  text-decoration: inherit !important;
 	display: inline-block;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  color: inherit;
 }
 button {
   // color: inherit;

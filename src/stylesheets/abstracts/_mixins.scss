@@ -100,3 +100,31 @@
   height: #{$height}vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * #{$height});
 }
+
+
+/// Learn more button with transparent bg
+/// @param {Color} $color
+@mixin learn-more-btn($color: #fff, $active-color: transparent) {
+  padding: 0.8em 1.8em;
+  border: 1.5rem solid $color;
+  border-radius: 4rem;
+  color: #{$color};
+  // background: #{$bg};
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: #{$active-color};
+    background: #{$color};
+  }
+  &:active {
+    color: #{$active-color};
+    background: #{$color};
+    transform: scale(1.04);
+  }
+}

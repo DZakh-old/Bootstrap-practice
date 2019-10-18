@@ -14,6 +14,7 @@
     padding-top: 0.2em;
   }
   &__learn-more-btn {
+    @include learn-more-btn(#fff, $brand-color);
     margin-top: 38rem;
   }
 }

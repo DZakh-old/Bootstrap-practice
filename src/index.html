@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#ffffff"/>
   <meta name="description" content="This is a description"/>
 	<title>Title</title>
-  <link rel="icon" href="./images/site-icon.ico">
+  <link rel="icon" href="./images/favicon.ico">
 </head>
 <body class="page">
   <header class="first d-flex flex-column">
@@ -86,18 +86,18 @@
     <picture>
       <source media="(min-width: 800px)"
               srcset="./images/first/background-1920w-min.webp" type="image/webp"
-         data-srcset="./images/first/background-1920w-1x.webp 1x,
-                      ./images/first/background-1920w-2x.webp 2x">
+         data-srcset="./images/first/background-1920w-1x.webp 960w,
+                      ./images/first/background-1920w-2x.webp 1920w">
       <source srcset="./images/first/background-754w-min.webp" type="image/webp"
-         data-srcset="./images/first/background-754w-1x.webp 1x,
-                      ./images/first/background-754w-2x.webp 2x">
+         data-srcset="./images/first/background-754w-1x.webp 377w,
+                      ./images/first/background-754w-2x.webp 754w">
       <source media="(min-width: 800px)"
               srcset="./images/first/background-1920w-min.jpg" type="image/jpeg"
-         data-srcset="./images/first/background-1920w-1x.jpg 1x,
-                      ./images/first/background-1920w-2x.jpg 2x">
+         data-srcset="./images/first/background-1920w-1x.jpg 960w,
+                      ./images/first/background-1920w-2x.jpg 1920w">
       <source srcset="./images/first/background-754w-min.jpg" type="image/jpeg"
-         data-srcset="./images/first/background-754w-1x.jpg 1x,
-                      ./images/first/background-754w-2x.jpg 2x">
+         data-srcset="./images/first/background-754w-1x.jpg 377w,
+                      ./images/first/background-754w-2x.jpg 754w">
       <img src="./images/first/background-1920w-2x.jpg" class="first__background lazyload"
             alt="Фантастический солнечный берег Болгарии для туризма">
     </picture>
@@ -219,18 +219,63 @@
       <picture>
         <source media="(min-width: 800px)"
                 srcset="./images/offer/background-1920w-min.webp" type="image/webp"
-           data-srcset="./images/offer/background-1920w-1x.webp 1x,
-                        ./images/offer/background-1920w-2x.webp 2x">
+           data-srcset="./images/offer/background-1920w-1x.webp 960w,
+                        ./images/offer/background-1920w-2x.webp 1920w">
         <source media="(min-width: 800px)"
                 srcset="./images/offer/background-1920w-min.jpg" type="image/jpeg"
-           data-srcset="./images/offer/background-1920w-1x.jpg 1x,
-                        ./images/offer/background-1920w-2x.jpg 2x">
+           data-srcset="./images/offer/background-1920w-1x.jpg 960w,
+                        ./images/offer/background-1920w-2x.jpg 1920w">
         <img src="./images/offer/background-1920w-2x.jpg" class="offer__background lazyload"
               alt="Великолепные ракушки на берегу солнечной Болгарии">
       </picture>
     </section>
+    <section class="services">
+      <div class="services__container container">
+        <h2 class="services__heading heading heading_section">
+          Недвижимость и транспортные услуги
+        </h2>
+        <div class="services__inner row">
+          <div class="services__content col-12 col-lg-8">
+            <div class="services__card services__card_main">
+              <h3 class="services__title heading heading_sub">
+                Мечтаете о доме на Солнечном берегу?
+              </h3>
+              <p class="services__text">
+                Или хотите выгодно инвестировать в  заграничную недвижимость? В любом случае — подходящий вариант уже ждет Вас! Большой выбор объектов жилой и коммерческой недвижимости и профессиональный сервис позволит провести сделку с удовольствием и получить нужный результат
+              </p>
+            </div>
+            <div class="services__card services__card_second">
+              <p class="services__text">
+                Если Ваши чемоданы уже собраны и Вы готовы к переезду, рады предложить Вам транспортные услуги по перевозке личный вещей в Болгарию. Для успешного размещения на новом месте жительства мы поможем перевести Ваши вещи в сохранности
+              </p>
+            </div>
+            <a href="#" class="services__learn-more-btn learn-more-btn">
+              Узнать больше
+            </a>
+          </div>
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width: 800px)"
+                srcset="./images/services/background-1920w-min.webp" type="image/webp"
+            data-srcset="./images/services/background-1920w-1x.webp 960w,
+                        ./images/services/background-1920w-2x.webp 1920w">
+        <source srcset="./images/services/background-800w-min.webp" type="image/webp"
+            data-srcset="./images/services/background-800w-1x.webp 400w,
+                        ./images/services/background-800w-2x.webp 800w">
+        <source media="(min-width: 800px)"
+                srcset="./images/services/background-1920w-min.jpg" type="image/jpeg"
+            data-srcset="./images/services/background-1920w-1x.jpg 960w,
+                        ./images/services/background-1920w-2x.jpg 1920w">
+        <source srcset="./images/services/background-800w-min.jpg" type="image/jpeg"
+            data-srcset="./images/services/background-800w-1x.jpg 400w,
+                        ./images/services/background-800w-2x.jpg 800w">
+        <img src="./images/services/background-1920w-2x.jpg" class="services__background lazyload"
+              alt="Затуманенная городская застройка">
+      </picture>
+    </section>
   </main>
-  
+
   <script src="./index.js"></script>
 </body>
 </html>
