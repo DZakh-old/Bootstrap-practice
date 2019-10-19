@@ -14,5 +14,11 @@ import "./js/functions/burger-menu";
 import "./js/functions/smooth-scroll-to";
 
 /* === Packedges === */
+/* Lazysizes */
 import "lazysizes";
+
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
+
+/* Swiper */
+import Swiper from 'swiper';
+var mySwiper = new Swiper('.swiper-container', { /* ... */ });

@@ -39,15 +39,13 @@ html {
 ul {
 	list-style: none;
 }
-a {
-  text-decoration: inherit !important;
-	display: inline-block;
-}
+a {	display: inline-block; }
 a,
 a:hover,
 a:focus,
 a:active {
   color: inherit;
+  text-decoration: inherit;
 }
 button {
   // color: inherit;

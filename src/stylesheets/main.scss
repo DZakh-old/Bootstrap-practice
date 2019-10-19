@@ -25,7 +25,8 @@
   'layout/first',
   'layout/advantages',
   'layout/offer',
-  'layout/services';
+  'layout/services',
+  'layout/reviews';
 
 // 5. Components
 @import
@@ -38,7 +39,8 @@
   'components/advantage',
   'components/quote',
   'components/your-question',
-  'components/our-answer';
+  'components/our-answer',
+  'components/review';
 
 // 6. Page-specific styles
 @import
