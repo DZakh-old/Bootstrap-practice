@@ -1,8 +1,13 @@
 import "./stylesheets/main.scss";
 
 import "@babel/polyfill";
+import $ from "jquery";
 
 import 'bootstrap';
+$('.carousel').carousel({
+  interval: 5000,
+  touch: false
+})
 
 
 /* === Helpers === */
@@ -16,9 +21,4 @@ import "./js/functions/smooth-scroll-to";
 /* === Packedges === */
 /* Lazysizes */
 import "lazysizes";
-
 import "lazysizes/plugins/parent-fit/ls.parent-fit";
-
-/* Swiper */
-import Swiper from 'swiper';
-var mySwiper = new Swiper('.swiper-container', { /* ... */ });

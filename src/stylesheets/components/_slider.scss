@@ -1,0 +1,68 @@
+.slider {
+  $pagination-position-below: 55rem;
+  
+  @include media-breakpoint-up(lg) {
+    $pagination-position-below: 70rem;
+  }
+
+  margin-bottom: $pagination-position-below;
+
+  &__reviews {
+    overflow: visible;
+  }
+  &__control {
+    display: none;
+
+    /* Display control buttons */
+    @media (min-width: 888px) {
+      $distance: 125rem;
+      display: flex;
+      margin-top: 60rem;
+      color: $second-brand-color;
+      font-size: 3em;
+      transition: color 0.5s;
+
+      &:hover,
+      &:focus {
+        color: $second-brand-color;
+      }
+      &:active {
+        color: $brand-color;
+      }
+
+      &_prev {
+        transform: translateX(-$distance);
+
+        @include media-breakpoint-up(lg) {
+          transform: translateX(-$distance - 45rem);
+        }
+      }
+      &_next {
+        transform: translateX(+$distance);
+      }
+    }
+  }
+  &__pagination {
+    $dot-size: 20rem;
+    $dot-bd-size: 1.5rem;
+    @include center(horizontal);
+    transform: translateY($pagination-position-below);
+    display: flex;
+
+    &-dot {
+      height: $dot-size - $dot-bd-size * 2 !important;
+      width: $dot-size - $dot-bd-size * 2 !important;
+      margin-right: $dot-size / 4 !important;
+      margin-left: $dot-size / 4 !important;
+      border: $dot-bd-size dashed $second-brand-color !important;
+      border-radius: 50% !important;
+      
+      &:hover {
+        background: rgba(0, 0, 255, 0.1);
+      }
+    }
+    &-dot.active {
+      background: $second-brand-color !important;
+    }
+  }
+}
