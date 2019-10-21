@@ -4,6 +4,7 @@
     font-size: 16rem;
     line-height: 1.4em;
     font-weight: bold;
+
     &__number {
       @include underline(#fff);
     }
@@ -24,6 +25,13 @@
       text-align: center;
       color: $second-brand-color;
       border: 1.5rem dashed $second-brand-color;
+    }
+
+    &_footer {
+      &::before {
+        color: #fff;
+        border-color: #fff;
+      }
     }
   }
 }

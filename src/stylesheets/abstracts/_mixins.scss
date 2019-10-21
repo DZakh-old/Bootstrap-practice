@@ -131,8 +131,9 @@
 }
 
 
-/// Customized dotted border
-@mixin border-dotted($color: #333, $position: bottom, $size: 1px, $gap: 5px) {
+/// Customizable dotted border
+/// TODO: Add param and figure out how to use "..." in sass
+@mixin border-dotted($position: bottom, $size: 1px, $gap: 5px, $color: #333) {
   $section: $size + $gap;
   @if $position == 'top' or $position == 'bottom' {
     background-repeat: repeat-x;
@@ -154,8 +155,5 @@
       background-position: 0 0;
       background-image: linear-gradient(to bottom, $color, $color ($size / $section * 100%), transparent ($size / $section * 100%));
     }
-  }
-  .ie9 & {
-    border-#{$position}:1px dotted $color;      
   }
 }
