@@ -1,5 +1,5 @@
 .offer {
-  @include full-screen-bg;
+  @include full-screen-bg($brand-color);
   background: $brand-color;
   color: #fff;
   padding-top: 80rem;

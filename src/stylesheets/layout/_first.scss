@@ -1,6 +1,6 @@
 .first {
   @include real-vh-height;
-  @include full-screen-bg;
+  @include full-screen-bg($brand-color);
   color: #fff;
   min-height: 300rem;
   letter-spacing: 0.5rem;

@@ -372,6 +372,45 @@
         </div>
       </div>
     </section>
+    <section class="consultation">
+      <div class="consultation__container container">
+        <h2 class="consultation__heading heading heading_section">
+          Есть вопросы<br>
+          по переезду в болгарию?
+        </h2>
+        <p class="consultation__caption">
+          Мы проконсультируем вас бесплатно!
+        </p>
+        <div class="consultation__form row">
+          <form action="/" class="contact-form col-12 col-md-6 col-lg-4">
+            <input class="contact-form__element contact-form__element_input" type="text" name="name" placeholder="Имя">
+            <input class="contact-form__element contact-form__element_input" type="email" name="email" placeholder="E-mail">
+            <input class="contact-form__element contact-form__element_input" type="tel" name="tel" placeholder="Телефон">
+            <button class="contact-form__element contact-form__element_button" type="submit">
+              Заказать консультацию
+            </button>
+          </form>
+        </div>
+      </div>
+      <picture>
+        <source media="(min-width: 800px)"
+                srcset="./images/consultation/background-1920w-min.webp" type="image/webp"
+            data-srcset="./images/consultation/background-1920w-1x.webp 960w,
+                        ./images/consultation/background-1920w-2x.webp 1920w">
+        <source srcset="./images/consultation/background-800w-min.webp" type="image/webp"
+            data-srcset="./images/consultation/background-800w-1x.webp 400w,
+                        ./images/consultation/background-800w-2x.webp 800w">
+        <source media="(min-width: 800px)"
+                srcset="./images/consultation/background-1920w-min.jpg" type="image/jpeg"
+            data-srcset="./images/consultation/background-1920w-1x.jpg 960w,
+                        ./images/consultation/background-1920w-2x.jpg 1920w">
+        <source srcset="./images/consultation/background-800w-min.jpg" type="image/jpeg"
+            data-srcset="./images/consultation/background-800w-1x.jpg 400w,
+                        ./images/consultation/background-800w-2x.jpg 800w">
+        <img src="./images/consultation/background-1920w-2x.jpg" class="consultation__background lazyload"
+              alt="Бессмысленный занимательный фон">
+      </picture>
+    </section>
   </main>
 
   <script src="./index.js"></script>

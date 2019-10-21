@@ -1,0 +1,47 @@
+.consultation {
+  @include full-screen-bg($second-brand-color);
+  color: #fff;
+  padding-top: 79rem;
+  padding-bottom: 45rem;
+  text-align: center;
+
+  &__caption {
+    font-weight: lighter;
+    font-size: 1.175em;
+    letter-spacing: 2.25rem;
+    padding-top: 0.75em;
+    text-transform: uppercase;
+    max-width: 320rem;
+    margin: auto;
+
+    &::after {
+      @include decorative-circle;
+      background: #11b2f5;
+      display: block;
+      font-size: 16rem;
+      padding-left: 1rem;
+      margin: 25rem auto 0;
+    }
+  }
+  &__form {
+    padding-top: 13rem;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 72rem;
+
+    &__caption { 
+      padding-top: 1em; 
+      &::after {
+        margin-top: 30rem;
+      }
+    }
+    &__form {
+      padding-top: 28rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 75rem;
+  }
+}

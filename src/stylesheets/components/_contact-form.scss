@@ -1,0 +1,53 @@
+.contact-form {
+  margin: auto;
+
+  &__element {
+    min-width: 100%;
+    color: #fff;
+    border-radius: 4rem;
+    margin-bottom: 10rem;
+
+    &_input {
+      background: #30c2ff;
+      border: 1rem solid #fff;
+      padding: 1.18em 2em;
+
+      &::placeholder {
+        color: #fff;
+        font-variant: small-caps;
+        text-transform: lowercase;
+        font-size: 1.2em;
+        left: 0.1em;
+        opacity: 0.6;
+      }
+
+      &:hover,
+      &:focus {
+        box-shadow: 0 3rem 20rem rgba(0, 0, 0, 0.17);
+
+        &::placeholder {
+          opacity: 1;
+        }
+      }
+    }
+    &_button {
+      $coefficient: 0.94;
+      border: 2rem solid #fff;
+      margin-top: 10rem;
+      padding: (1.18em / $coefficient + 0.5em * (1 - $coefficient)) 0;
+      font-size: 1em * $coefficient;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 0.13em;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        background: rgba(0,0,255,0.05);
+      }
+      &:active {
+        background: rgba(0,0,255,0.1);
+      }
+    }
+  }
+}
