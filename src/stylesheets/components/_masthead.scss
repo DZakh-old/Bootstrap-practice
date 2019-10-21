@@ -6,14 +6,4 @@
     @include center;
     height: 100%;
   }
-
-  &__logo {
-    background: $second-brand-color;
-    padding: 10rem 0;
-    &-img {
-      width: auto;
-      height: auto;
-      max-height: 40rem;
-    }
-  }
 }

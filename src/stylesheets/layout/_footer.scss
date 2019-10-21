@@ -1,0 +1,28 @@
+.footer {
+  height: 89rem;
+  background: $second-brand-color;
+  color: #fff;
+  box-shadow: 0 -35rem 50rem rgba(0, 0, 0, 0.1);
+  font-size: 0.85em;
+  font-weight: lighter;
+
+  &__inner > div {
+    @include center;
+    height: 100%;
+  }
+
+  &__confidentiality {
+    &-link {
+      @include border-dotted(#fff, bottom, 1rem, 3rem);
+      margin-right: auto;
+      padding: 0.16em 0;
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        @include border-dotted(#fff, bottom, 1.5rem, 5rem);
+        background-position: bottom;
+      }
+    }
+  }
+}

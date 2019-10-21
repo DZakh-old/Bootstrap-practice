@@ -129,3 +129,33 @@
     transform: scale(1.04);
   }
 }
+
+
+/// Customized dotted border
+@mixin border-dotted($color: #333, $position: bottom, $size: 1px, $gap: 5px) {
+  $section: $size + $gap;
+  @if $position == 'top' or $position == 'bottom' {
+    background-repeat: repeat-x;
+    background-size: $section $size;
+    @if $position == 'top' {
+      background-position: 100% 0;
+      background-image: linear-gradient(to left, $color, $color ($size / $section * 100%), transparent ($size / $section * 100%));
+    } @else {
+      background-position: 0 100%;
+      background-image: linear-gradient(to right, $color, $color ($size / $section * 100%), transparent ($size / $section * 100%));
+    }
+  } @else {
+    background-repeat: repeat-y;
+    background-size: $size $section;
+    @if $position == 'right' {
+      background-position: 100% 100%;
+      background-image: linear-gradient(to top, $color, $color ($size / $section * 100%), transparent ($size / $section * 100%));
+    } @else {
+      background-position: 0 0;
+      background-image: linear-gradient(to bottom, $color, $color ($size / $section * 100%), transparent ($size / $section * 100%));
+    }
+  }
+  .ie9 & {
+    border-#{$position}:1px dotted $color;      
+  }
+}

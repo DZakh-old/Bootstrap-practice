@@ -27,11 +27,13 @@
   'layout/offer',
   'layout/services',
   'layout/reviews',
-  'layout/consultation';
+  'layout/consultation',
+  'layout/footer';
 
 // 5. Components
 @import
   'components/masthead',
+  'components/logo',
   'components/navigation',
   'components/telephones',
   'components/burger',
