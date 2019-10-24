@@ -5,6 +5,7 @@
   width: $burger-size;
   height: $burger-size;
   transition: all 0.3s;
+  z-index: 10000;
 
   &-btn {
     width: 100%;

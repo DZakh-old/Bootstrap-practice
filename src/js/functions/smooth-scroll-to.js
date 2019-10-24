@@ -1,13 +1,13 @@
 (function processInnerLinkClick() {
   const links = document.querySelectorAll(".smooth-scroll-to");
-  for (const link of links) {
-    link.addEventListener("click", e => {
+  links.forEach(link => {
+    link.addEventListener("click", element => {
       // console.log("clicked");
-      e.preventDefault();
-      e.stopPropagation();
-      smoothScrollTo(e.target.dataset.id);
+      element.preventDefault();
+      element.stopPropagation();
+      smoothScrollTo(element.target.dataset.id);
     });
-  };
+  });
 })();
 
 const smoothScrollTo = (elementId) => {
