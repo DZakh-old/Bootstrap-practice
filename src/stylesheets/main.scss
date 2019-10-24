@@ -37,7 +37,7 @@
   'components/navigation',
   'components/telephones',
   'components/burger',
-  'components/page-title',
+  'components/title',
   'components/arrow-to-down',
   'components/advantage',
   'components/quote',
@@ -48,8 +48,9 @@
   'components/contact-form';
 
 // 6. Page-specific styles
+/* uncss:ignore start */
 @import
-  'pages/home';
+  'page/contacts';
 
 // 7. Themes
 @import

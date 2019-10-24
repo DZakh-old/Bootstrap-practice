@@ -1,5 +1,6 @@
 @include media-breakpoint-up(md) {
   .telephones {
+    $decor-color: $second-brand-color;
     position: relative;
     font-size: 16rem;
     line-height: 1.4em;
@@ -23,8 +24,8 @@
       width: 26rem;
       border-radius: 50%;
       text-align: center;
-      color: $second-brand-color;
-      border: 1.5rem dashed $second-brand-color;
+      color: $decor-color;
+      border: 1.5rem dashed $decor-color;
     }
 
     &_footer {

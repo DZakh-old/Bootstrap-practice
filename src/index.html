@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#ffffff"/>
+  <meta name="theme-color" content="#2b4458"/>
   <meta name="description" content="This is a description"/>
 	<title>Bootstrap practice</title>
   <link rel="icon" href="./images/favicon.ico">
 </head>
-<body class="page">
+<body class="page page_main">
   <header class="first d-flex flex-column">
     <div class="masthead" id="masthead">
       <div class="masthead__container container">
@@ -19,7 +19,7 @@
               <source srcset="./images/logo/logo-min.webp" type="image/webp"
                   data-srcset="./images/logo/logo.webp">
               <source srcset="./images/logo/logo-min.png" type="image/png"
-                data-srcset="./images/logo/logo.png">
+                  data-srcset="./images/logo/logo.png">
               <img src="./images/logo/logo.png" class="logo__img lazyload"
                     alt="Логотип агенства по переезду в Болгарию Compas">
             </picture>
@@ -48,7 +48,7 @@
                   </a>
                 </li>
                 <li class="navigation__item">
-                  <a href="#" class="navigation__link">
+                  <a href="./contacts.html" class="navigation__link">
                     Контакты
                   </a>
                 </li>
@@ -56,7 +56,7 @@
             </nav>
           </div>
           <div class="masthead__telephones d-none d-md-flex col-3 col-lg-2 ml-auto">
-            <div class="telephones">
+            <div class="telephones telephones_masthead">
               <a href="tel:+749512321345" class="telephones__number">
                 +7 (495) 12-321-345
               </a>
@@ -66,9 +66,9 @@
             </div>
           </div>
           <div class="masthead__burger d-lg-none col-2 col-sm-1 ml-auto ml-md-0">
-            <button class="burger smooth-scroll-to" data-id="masthead" aria-label="Открыть меню сайта">
-              <div class="burger-btn"></div>
-            </button>
+            <a class="burger smooth-scroll-to" data-id="masthead" aria-label="Открыть меню сайта">
+              <div class="burger-btn" aria-hidden="true"></div>
+            </a>
           </div>
         </div>
       </div>
@@ -358,7 +358,7 @@
               </li>
             </ul>
             <a class="slider__control slider__control_prev carousel-control-prev" href="#slider" role="button" data-slide="prev">
-              <span class="icon-angle-left aria-hidden="true"></span>
+              <span class="icon-angle-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="slider__control slider__control_next carousel-control-next" href="#slider" role="button" data-slide="next">
@@ -449,8 +449,8 @@
         </div>
       </div>
     </div>
-
   </footer>
+
   <script src="./index.js"></script>
 </body>
 </html>
