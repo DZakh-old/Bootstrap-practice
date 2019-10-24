@@ -4,13 +4,12 @@
   $burger-size: 25rem;
   width: $burger-size;
   height: $burger-size;
+  transition: all 0.3s;
 
   &-btn {
     width: 100%;
     top: 50%;
     right: 0;
-    margin-top: -$burger-size / 10;
-    margin-bottom: -$burger-size / 10;
     opacity: 1;
 
     &::before {
@@ -30,12 +29,12 @@
       position: absolute;
       background: rgba(255,255,255);
       border-radius: 0.75rem;
-      height:  $burger-size / 5 - 0.33rem;
+      height:  $burger-size / 5;
       transition: all .3s ease-in-out;
     }
   }
 
-  &:focus * {
+  &:focus {
     transform: scale(1.075);
   }
   &.active &-btn {

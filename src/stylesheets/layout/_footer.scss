@@ -13,14 +13,14 @@
 
   &__confidentiality {
     &-link {
-      @include border-dotted(bottom, 1rem, 3rem, #fff);
+      @include dotted((bottom, 1rem, 3rem, #fff));
       margin-right: auto;
       padding: 0.16em 0;
       transition: all 0.3s;
 
       &:hover,
       &:focus {
-        @include border-dotted(bottom, 1.5rem, 5rem, #fff);
+        @include dotted((bottom, 1.5rem, 5rem, #fff));
         background-position: bottom;
       }
     }
