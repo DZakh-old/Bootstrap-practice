@@ -1,5 +1,6 @@
 @charset 'UTF-8';
 
+/* uncss:ignore start */
 // 1. Configuration and helpers
 @import
   'abstracts/variables',
@@ -7,12 +8,14 @@
   'abstracts/mixins',
   'abstracts/animations',
   'abstracts/extends';
-  
+/* uncss:ignore end */
+
 // 2. Vendors
 @import
   'vendors/normalize',
   'vendors/bootstrap';
 
+/* uncss:ignore start */
 // 3. Base stuff
 @import
   'base/base',
@@ -28,6 +31,7 @@
   'layout/services',
   'layout/reviews',
   'layout/consultation',
+  'layout/contacts',
   'layout/footer';
 
 // 5. Components
@@ -45,13 +49,15 @@
   'components/our-answer',
   'components/slider',
   'components/review',
-  'components/contact-form';
+  'components/contact-form',
+  'components/references',
+  'components/reference';
 
 // 6. Page-specific styles
-/* uncss:ignore start */
 @import
   'page/contacts';
 
 // 7. Themes
 @import
   'themes/default';
+/* uncss:ignore end */

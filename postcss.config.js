@@ -4,7 +4,11 @@ module.exports = {
       grid: true
     }),
     require('postcss-uncss')({
-      html: './src/index.html'
+      html: [
+        './src/index.html',
+        './src/contacts.html'
+      ],
+      ignore: []
     })
   ]
 }

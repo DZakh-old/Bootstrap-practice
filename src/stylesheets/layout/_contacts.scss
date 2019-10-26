@@ -1,0 +1,14 @@
+.contacts {
+  text-align: center;
+  font-weight: 100;
+  padding-top: 53rem;
+  padding-bottom: 85rem;
+
+  &__heading {
+    font-size: 16rem;
+  }
+  &__form {
+    padding: 40rem 38rem 48rem;
+    background: $second-brand-color;
+  }
+}

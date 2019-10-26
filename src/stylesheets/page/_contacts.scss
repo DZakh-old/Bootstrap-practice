@@ -40,9 +40,16 @@
       padding: 15rem 0 0;
     }
     &__heading {
-      font-size: 46rem;
+      font-size: 9.5vw;
       letter-spacing: 0.3em;
       margin-left: 0.3em;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 46rem;
+      }
     }
   }
+
+  
+  
 }
