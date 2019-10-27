@@ -19,7 +19,7 @@
 
   &::before,
   &::after {
-    @include decorative-circle;
+    @extend %decorative-circle;
     display: block;
     position: absolute;
     right: 0;

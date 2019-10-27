@@ -3,3 +3,33 @@
   content: '';
   display: block;
 }
+
+
+/// Decorative line under heading
+%decorative-line {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    background: $gray;
+    height: 1.2rem;
+    width: 38rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+}
+
+
+/// Decorative circle with an arrow inside
+%decorative-circle {
+  height: $decorative-circle-size;
+  width: $decorative-circle-size;
+  line-height: $decorative-circle-size;
+  border: 1rem dashed #fff;
+  border-radius: 50%;
+  font-family: 'icomoon';
+  content: '\e901';
+}

@@ -1,0 +1,19 @@
+.page_sub_about {
+
+  @include media-breakpoint-up(lg) {
+    .sub-page-content {
+      & .container {
+        padding: 0 0 52rem;
+      }
+    }
+  }
+
+  .about-company {
+    @include media-breakpoint-up(lg) {
+      &__ready-question {
+        margin: 0;
+      }
+    }
+  }
+
+}

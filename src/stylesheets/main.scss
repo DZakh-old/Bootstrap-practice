@@ -35,6 +35,7 @@
   'layout/reviews',
   'layout/consultation',
   'layout/contacts',
+  'layout/about-company',
   'layout/footer';
 
 // 5. Components
@@ -54,13 +55,16 @@
   'components/review',
   'components/contact-form',
   'components/references',
-  'components/reference';
+  'components/reference',
+  'components/typography',
+  'components/partners',
+  'components/partner';
 
 // 6. Page-specific styles
 @import
-  'page/all-sub-pages',
-  'page/contacts',
-  'page/about';
+  'pages/all-sub-pages',
+  'pages/contacts',
+  'pages/about';
 
 // 7. Themes
 @import

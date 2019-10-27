@@ -19,21 +19,9 @@
     }
   }
   &__heading {
+    @extend %decorative-line;
     padding: 1.36em 0 0.65em;
     margin-bottom: 0.75em;
-    position: relative;
-
-    &::after {
-      @extend %pseudo;
-      background: $gray;
-      height: 1rem;
-      width: 38rem;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      margin: auto;
-    }
   }
   &__description {
     font-weight: lighter;

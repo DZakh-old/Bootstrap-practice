@@ -1,0 +1,51 @@
+.typography {
+  width: 220rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 1.7em;
+  
+  &__block {
+    letter-spacing: 0.11em;
+    margin-right: -0.11em;
+  }
+  &__blue {
+    color: $second-brand-color;
+    margin-bottom: 7rem;
+  }
+
+  &__block:first-child {
+    .typography__blue {
+      font-size: 43.6rem;
+      padding-top: 3.5rem;
+      padding-bottom: 3rem;
+    }
+    .typography__black {
+      font-size: 14.82rem;
+    }
+  }
+
+  &__middle {
+    font-weight: 100;
+    color: $typography-gray;
+    font-size: 20.6rem;
+    letter-spacing: 0.48em;
+    margin: 17rem 0 20rem;
+    margin-right: -0.48em;
+  }
+
+  &__block:last-child {
+    .typography__blue {
+      font-size: 30.5rem;
+    }
+    .typography__black {
+      font-size: 31.8rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 100%;
+    max-width: 730rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}

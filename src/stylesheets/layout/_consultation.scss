@@ -15,7 +15,7 @@
     margin: auto;
 
     &::after {
-      @include decorative-circle;
+      @extend %decorative-circle;
       background: #11b2f5;
       display: block;
       font-size: 16rem;
