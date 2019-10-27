@@ -58,7 +58,9 @@
 
 // 6. Page-specific styles
 @import
-  'page/contacts';
+  'page/all-sub-pages',
+  'page/contacts',
+  'page/about';
 
 // 7. Themes
 @import

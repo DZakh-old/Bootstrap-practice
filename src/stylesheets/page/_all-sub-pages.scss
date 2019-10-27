@@ -1,0 +1,76 @@
+.page_sub {
+
+  /* _____ BASE _____ */
+  @include media-breakpoint-up(lg) {
+    .sub-page-content {    
+      background: $light-gray;
+      padding: 0;
+  
+      & .container {
+        max-width: 1030rem;
+        padding: 53rem 100rem 63rem 115rem;
+        background: #fff;
+        transform: translateY(-90rem);
+        box-shadow: 0rem 5rem 5rem -4rem rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+
+
+
+  /* _____ FIRST _____ */
+  .first {
+    max-height: 400rem;
+
+    @include media-breakpoint-up(lg) {
+      max-height: 415rem;
+      padding-bottom: 90rem;
+    }
+  }
+
+
+  /* === Telephones === */
+  @include media-breakpoint-up(lg) {
+    .telephones_masthead {
+      .telephones__number {
+        &:first-child {
+          @include underline(transparent);
+          @include dotted(bd-bottom(1rem, 3rem, #fff));
+          transition: all 0.3s;
+
+          &:hover,
+          &:focus {
+            @include dotted(bd-bottom(2rem, 6rem, #fff));
+            background-position: bottom;
+          }
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+
+
+  /* === Title === */
+  .title {
+    &__inner {
+      padding: 15rem 0 0;
+    }
+    &__heading {
+      font-size: 9.5vw;
+      letter-spacing: 0.3em;
+      margin-left: 0.3em;
+
+      @include media-breakpoint-up(sm) {
+        font-size: 46rem;
+      }
+    }
+  }
+
+
+  /* === Arrow-to-down === */
+  .arrow-to-down {
+    margin-bottom: 30rem;
+  }
+}
