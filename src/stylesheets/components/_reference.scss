@@ -31,4 +31,22 @@
       transform: scaleX(1.05);
     }
   }
+
+  @include media-breakpoint-up(md) {
+    max-width: 280rem;
+    position: relative;
+    padding-left: 62rem;
+    padding-bottom: 45rem;
+    margin: 0;
+    text-align: left;
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &__heading {
+      text-align: left;
+    }
+  }
 }

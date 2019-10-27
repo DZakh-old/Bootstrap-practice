@@ -2,7 +2,7 @@
   margin: auto;
 
   &__element {
-    min-width: 100%;
+    width: 100%;
     color: #fff;
     border-radius: 4rem;
     margin-bottom: 10rem;
@@ -31,10 +31,10 @@
       }
     }
     &_button {
-      $coefficient: 0.94;
+      $coefficient: 0.90;
       border: 2rem solid #fff;
       margin-top: 10rem;
-      padding: (1.18em / $coefficient + 0.5em * (1 - $coefficient)) 0;
+      padding: (1.18em / $coefficient + 0.5em * (1 - $coefficient)) 1em;
       font-size: 1em * $coefficient;
       text-transform: uppercase;
       font-weight: bold;
@@ -43,10 +43,10 @@
 
       &:hover,
       &:focus {
-        background: rgba(0,0,255,0.05);
+        background: transparentize($brand-color, 0.85);
       }
       &:active {
-        background: rgba(0,0,255,0.1);
+        background: transparentize($brand-color, 0.75);
       }
     }
   }

@@ -50,6 +50,51 @@
     }
   }
 
+
+  /* === Arrow-to-down === */
+  .arrow-to-down {
+    margin-bottom: 30rem;
+  }
+
+
+  /* === Consultation === */
+  .consultation {
+    background: $second-brand-color;
+    padding: 40rem 40rem 48rem;
+
+    &__heading {
+      font-size: 26rem;
+
+      &-smaller {
+        display: block;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        line-height: 1.15em;
+      }
+    }
+    &__caption {
+      padding-bottom: 35rem;
+
+      &::after {
+        display: none;
+      }
+    }
+    
+    @include media-breakpoint-up(md) {
+      max-width: 352rem;
+      padding: 30rem;
+    }
+  }
+
   
-  
+  /* === Form === */
+  @include media-breakpoint-down(sm) {
+    .contact-form {  
+      &__element {
+        &_input {
+          padding-left: 4em;
+        }
+      }
+    }
+  }
 }

@@ -11,4 +11,27 @@
     padding: 40rem 38rem 48rem;
     background: $second-brand-color;
   }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 63rem;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 56rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    background: $light-gray;
+    padding: 0;
+
+    &__container {
+      max-width: 1030rem;
+      padding: 53rem 100rem 63rem 115rem;
+      background: #fff;
+      transform: translateY(-90rem);
+      box-shadow: 0rem 5rem 5rem -4rem rgba(0,0,0,0.3);
+    }
+  }
 }

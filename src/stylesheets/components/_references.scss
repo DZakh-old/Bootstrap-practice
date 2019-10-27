@@ -3,6 +3,17 @@
   
   &__option {
     padding-bottom: 36rem;
-    margin: auto;
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(md) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__option {
+      padding: 0;
+    }
   }
 }
