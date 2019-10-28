@@ -1,12 +1,15 @@
 .logo {
+
   &_masthead {
     background: $second-brand-color;
     padding: 10rem 0;
+
     & .logo__img {
       opacity: 0.5;
       max-height: 40rem;
     }
   }
+  
   &_footer {
     & .logo__img {
       max-height: 50rem;

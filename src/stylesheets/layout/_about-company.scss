@@ -1,9 +1,11 @@
 .about-company {
+
   &__content {
     @include media-breakpoint-up(lg) {
       padding: 0 66rem;
     }
   }
+
   &__text {
     text-align: center;
     padding-top: 50px;
@@ -12,6 +14,7 @@
       padding-top: 65rem;
     }
   }
+
   &__typography {
     margin: 0 auto;
     padding-top: 37rem;
@@ -21,10 +24,12 @@
       padding-top: 57rem;
       padding-bottom: 48rem;
     }
+
     @include media-breakpoint-up(lg) {
       padding-top: 60rem;
     }
   }
+  
   &__ready-question {
     background: $second-brand-color;
     color: #ffffff;

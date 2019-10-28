@@ -8,19 +8,20 @@
     font-weight: bold;
     text-transform: uppercase;
   }
+
   &__offer {
     letter-spacing: 0.09em;
     font-weight: lighter;
     padding-top: 0.2em;
   }
+
   &__learn-more-btn {
     @include learn-more-btn(#fff, $brand-color);
     margin-top: 38rem;
   }
-}
 
-@include media-breakpoint-up(md) {
-  .our-answer {
+
+  @include media-breakpoint-up(md) {
     max-width: 100%;
   }
 }

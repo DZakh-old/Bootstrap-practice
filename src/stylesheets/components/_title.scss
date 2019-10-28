@@ -1,9 +1,16 @@
 .title {
   flex: 1;
+
   &__inner {
     @include center;
     padding-bottom: 40rem;
+    
+
+    @media (max-height: 600px) {
+      padding: 0 !important; // Doesn't work correctly without Important
+    }
   }
+
   &__heading {
     text-align: center;
     font-size: 10.5vw;
@@ -12,6 +19,7 @@
     text-transform: uppercase;
     font-weight: 900;
   }
+
   &__caption {
     display: block;
     font-size: 7vw;
@@ -19,54 +27,53 @@
     margin-left: 2vw;
     margin-top: 0.25em;
   }
-}
 
-@media (max-height: 600px) {
-  .title__inner {
-    padding: 0 !important;
-  }
-}
 
-@include media-breakpoint-up(sm) {
-  .title {
+  @include media-breakpoint-up(sm) {
+
     &__heading {
       font-size: 46rem;
       letter-spacing: 0.55em;
       margin-left: 0.55em;
     }
+
     &__caption {
       font-size: 32rem;
       letter-spacing: 0.28em;
       margin-left: 0.28em;
     }
   }
-}
 
-@include media-breakpoint-up(md) {
-  .title {
+  
+  @include media-breakpoint-up(md) {
+
     &__inner {
       padding-top: 50rem;
       padding-bottom: 0;
     }
+
     &__heading {
       font-size: 55rem;
     }
+
     &__caption {
       font-size: 39rem;
       margin-top: 0.3em;
     }
   }
-}
+  
 
-@include media-breakpoint-up(lg) {
-  @media (min-height: 400px) {
-    .title {
+  @include media-breakpoint-up(lg) {
+    @media (min-height: 400px) {
+
       &__inner {
         padding-top: 30rem;
       }
+
       &__heading {
         font-size: 72rem;
       }
+
       &__caption {
         font-size: 44rem;
         margin-top: 0.4em;
@@ -74,3 +81,4 @@
     }
   }
 }
+

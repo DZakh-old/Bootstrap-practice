@@ -6,11 +6,13 @@
   &__img-wrap {
     @include center(horizontal);
   }
+
   &__photo {
     width: 136rem;
     height: 136rem;
     border-radius: 50%;
   }
+
   &__name {
     @extend %decorative-line;
     text-transform: capitalize;
@@ -18,6 +20,7 @@
     letter-spacing: 0.05em;
     padding-top: 20rem;
   }
+  
   &__info {
     text-align: justify;
     font-weight: 100;

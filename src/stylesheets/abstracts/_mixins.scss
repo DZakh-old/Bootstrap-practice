@@ -4,16 +4,6 @@
 
 
 
-/// Make a context based selector a little more friendly
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
-}
-
-
-
 /// Place child img as a full screen background
 @mixin full-screen-bg($safe-bg-color: white) {
   position: relative;
@@ -83,12 +73,14 @@
 }
 
 
+
 /// Works in tandem with the real-vh-height.js function to display sections correctly on mobiles
 /// @param {Number} $height
 @mixin real-vh-height($height: 100) {
   height: #{$height}vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * #{$height});
 }
+
 
 
 /// Learn more button with transparent bg
@@ -118,12 +110,6 @@
   }
 }
 
-
-
-// This doesn't work with multiple borders
-@mixin border-bottom-dotted($size: 1px, $gap: 5px, $color: inherit) {
-  @include dotted-border((bottom, $size, $gap, $color));
-}
 
 
 
@@ -193,7 +179,3 @@
   background-repeat: $bg-repeat-list;
 }
 //https://github.com/wildhaber/empty-state/blob/master/src/shapes.mixin.scss
-
-// @mixin dotted-clear {
-//   background: none;
-// }

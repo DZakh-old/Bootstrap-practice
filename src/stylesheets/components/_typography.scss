@@ -8,17 +8,20 @@
     letter-spacing: 0.11em;
     margin-right: -0.11em;
   }
+
   &__blue {
     color: $second-brand-color;
     margin-bottom: 7rem;
   }
 
   &__block:first-child {
+
     .typography__blue {
       font-size: 43.6rem;
       padding-top: 3.5rem;
       padding-bottom: 3rem;
     }
+
     .typography__black {
       font-size: 14.82rem;
     }
@@ -34,14 +37,17 @@
   }
 
   &__block:last-child {
+
     .typography__blue {
       font-size: 30.5rem;
     }
+
     .typography__black {
       font-size: 31.8rem;
     }
   }
 
+  
   @include media-breakpoint-up(md) {
     width: 100%;
     max-width: 730rem;

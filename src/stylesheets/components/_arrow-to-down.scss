@@ -9,6 +9,7 @@
   box-shadow: 0 0 0 1rem rgba(255,255,255,0);
 	overflow: hidden;
   transition: all 0.3s;
+
   &::before {
     font-family: 'icomoon';
     display: block;
@@ -35,16 +36,13 @@
     transform: scale(1.05);
     box-shadow: 0 0 0 10rem rgba(255,255,255,0.2);
   }
-}
 
-@media (max-height: 600px) {
-  .arrow-to-down {
+
+  @media (max-height: 600px) {
     margin-bottom: 40rem;
   }
-}
 
-@media (max-height: 400px) {
-  .arrow-to-down {
+  @media (max-height: 400px) {
     margin-bottom: 30rem;
   }
 }

@@ -4,10 +4,17 @@
   padding-bottom: 76rem;
   text-align: center;
 
+  &__heading {
+    @media (max-width: 490px) {
+      font-size: 8.5vw;
+    }
+  }
+  
   &__content {
     margin: auto;
     padding-top: 200rem;
   }
+
   &__card {
     background: $light-gray;
     margin-bottom: 6rem;
@@ -25,6 +32,7 @@
         left: 0;
         margin: auto;
       }
+
       &::before {
         background: url('./../images/services/before.png') no-repeat 100% 100%;
         height: 188px;
@@ -42,10 +50,12 @@
         
       } 
     }
+
     &_second {
       padding-top: 45rem;
       position: relative;
 
+      /* Lifebuoy decorative circle */
       &::before {
         $size: 60rem;
         position: absolute;
@@ -66,48 +76,44 @@
       }
     }
   }
+
   &__title {
     padding-bottom: 0.5em;
   }
+
   &__text {
     font-weight: lighter;
   }
+
   &__learn-more-btn {
     @include learn-more-btn($second-brand-color, #fff);
     margin-top: 30rem;
   }
-}
 
-@include media-breakpoint-up(md) {
-  .services {
+
+  @include media-breakpoint-up(md) {
     padding-top: 59rem;
     padding-bottom: 64rem;
 
     &__content {
       padding-top: 120rem;
     }
+
     &__learn-more-btn {
       margin-top: 40rem;
     }
   }
-}
-
-@include media-breakpoint-up(lg) {
-  .services {
+  
+  @include media-breakpoint-up(lg) {
     padding-top: 100rem;
     padding-bottom: 99rem;
 
     &__content {
       padding-top: 155rem;
     }
+    
     &__learn-more-btn {
       margin-top: 60rem;
     }
-  }
-}
-
-@media (max-width: 490px) {
-  .services__heading {
-    font-size: 8.5vw;
   }
 }

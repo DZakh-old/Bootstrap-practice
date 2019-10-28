@@ -1,11 +1,12 @@
 .burger {
-  position: relative;
   $burger-size: 25rem;
+  position: relative;
   width: $burger-size;
   height: $burger-size;
   transition: all 0.3s;
   z-index: 10000;
 
+  /* Burger icon */
   &-btn {
     width: 100%;
     top: 50%;
@@ -37,9 +38,12 @@
   &:focus {
     transform: scale(1.075);
   }
+  
+  /* Burger active inimation */
   &.active &-btn {
     background: rgba(255,255,255,0);
   }
+  
   &.active &-btn::after {
     transform: rotate(-45deg);
     bottom: 0;

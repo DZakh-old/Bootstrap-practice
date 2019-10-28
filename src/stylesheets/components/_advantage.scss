@@ -1,15 +1,16 @@
 .advantage {
+  @include center(horizontal);
   background: $light-gray;
   margin-bottom: 16rem;
   padding-top: 57rem;
   padding-bottom: 10rem;
   min-height: 360rem;
   box-shadow: 0rem 5rem 5rem -4rem rgba(0,0,0,0.3);
-  @include center(horizontal);
 
   &__inner {
     width: 290rem;
   }
+
   &__icon {
     @include center(horizontal);
     
@@ -18,20 +19,21 @@
       width: auto;
     }
   }
+
   &__heading {
     @extend %decorative-line;
     padding-top: 1.36em;
     margin-bottom: 0.75em;
   }
+
   &__description {
     font-weight: lighter;
     text-align: center;
     line-height: 1.35em;
   }
-}
 
-@include media-breakpoint-up(md) {
-  .advantage {
+
+  @include media-breakpoint-up(md) {
     margin-bottom: 20rem;
   }
 }

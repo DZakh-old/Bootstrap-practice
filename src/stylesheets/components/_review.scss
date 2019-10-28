@@ -18,11 +18,13 @@
     border-radius: 50%;
     object-fit: cover;
   }
+
   &__vk-address,
   &__relocation {
     color: $second-brand-color;
     text-transform: uppercase;
   }
+
   &__vk-address {
     display: inline-block;
     padding-top: 0.6em;
@@ -40,11 +42,13 @@
       color: $second-brand-color;
     }
   }
+
   &__relocation {
     font-weight: lighter;
     font-size: 0.81em;
     letter-spacing: 0.065em;
   }
+
   &__text {
     padding-top: 1.1em;
     letter-spacing: 0.027em;
@@ -54,6 +58,7 @@
     color: $text-gray;
   }
   
+
   @include media-breakpoint-up(md) {
     padding: 40rem 60rem 45rem 100rem;
 
@@ -63,18 +68,22 @@
       left: -$photo-size / 2;
       bottom: 0;
     }
+
     &__title {
       display: flex;
       flex-wrap: wrap;
       width: 100%;
     }
+
     &__vk-address {
       padding: 0;
       margin-left: 30rem;
     }
+
     &__relocation {
       padding-top: 0.7em;
     }
+
     &__text {
       text-align: left;
     }

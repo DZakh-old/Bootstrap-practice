@@ -12,6 +12,7 @@
   }
 
   &__confidentiality {
+    
     &-link {
       @include dotted((bottom, 1rem, 3rem, #fff));
       margin-right: auto;

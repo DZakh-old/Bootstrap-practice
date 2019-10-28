@@ -139,7 +139,14 @@
           <ul class="partners__list">
             <li class="partners__card partner">
               <div class="partner__img-wrap">
-                <img src="./images/partners/igor-kovalev.jpg" alt="Игорь Ковалев" class="partner__photo">
+                <picture>
+                  <source srcset="./images/partners/igor-kovalev-min.webp" type="image/webp"
+                      data-srcset="./images/partners/igor-kovalev.webp">
+                  <source srcset="./images/partners/igor-kovalev-min.jpg" type="image/jpeg"
+                    data-srcset="./images/partners/igor-kovalev.jpg">
+                  <img src="./images/partners/igor-kovalev.jpg" class="partner__photo lazyload"
+                        alt="Игорь Ковалев">
+                </picture>
               </div>
               <h3 class="partner__name heading heading_sub">
                 Игорь Ковалев
@@ -150,7 +157,14 @@
             </li>
             <li class="partners__card partner">
               <div class="partner__img-wrap">
-                <img src="./images/partners/viktor-petrov.jpg" alt="Виктор Петров" class="partner__photo">
+                <picture>
+                  <source srcset="./images/partners/viktor-petrov-min.webp" type="image/webp"
+                      data-srcset="./images/partners/viktor-petrov.webp">
+                  <source srcset="./images/partners/viktor-petrov-min.jpg" type="image/jpeg"
+                    data-srcset="./images/partners/viktor-petrov.jpg">
+                  <img src="./images/partners/viktor-petrov.jpg" class="partner__photo lazyload"
+                        alt="Виктор Петров">
+                </picture>
               </div>
               <h3 class="partner__name heading heading_sub">
                 Виктор Петров

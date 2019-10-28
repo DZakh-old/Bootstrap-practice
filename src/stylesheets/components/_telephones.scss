@@ -1,5 +1,5 @@
-@include media-breakpoint-up(md) {
-  .telephones {
+.telephones {
+  @include media-breakpoint-up(md) {
     $decor-color: $second-brand-color;
     position: relative;
     font-size: 16rem;
@@ -9,6 +9,8 @@
     &__number {
       @include underline(#fff);
     }
+
+    /* Decorative circle */
     &::before {
       display: block;
       font-family: 'icomoon';

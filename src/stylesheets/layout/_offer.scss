@@ -9,17 +9,18 @@
   &__content {
     margin: auto;
   }
+
   &__quote {
     padding-top: 27rem;
     padding-bottom: 45rem;
   }
+
   &__our-answer {
     padding-top: 50rem;
   }
-}
 
-@include media-breakpoint-up(md) {
-  .offer {
+
+  @include media-breakpoint-up(md) {
     padding-top: 87rem;
     padding-bottom: 97rem;
     background: none;

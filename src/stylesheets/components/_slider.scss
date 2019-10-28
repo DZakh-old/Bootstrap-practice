@@ -10,6 +10,7 @@
   &__reviews {
     overflow: visible;
   }
+
   &__control {
     display: none;
 
@@ -33,15 +34,18 @@
       &_prev {
         transform: translateX(-$distance);
 
+
         @include media-breakpoint-up(lg) {
           transform: translateX(-$distance - 45rem);
         }
       }
+
       &_next {
         transform: translateX(+$distance);
       }
     }
   }
+
   &__pagination {
     $dot-size: 20rem;
     $dot-bd-size: 1.5rem;
@@ -60,9 +64,10 @@
       &:hover {
         background: rgba(0, 0, 255, 0.1);
       }
-    }
-    &-dot.active {
-      background: $second-brand-color !important;
+
+      &.active {
+        background: $second-brand-color !important;
+      }
     }
   }
 }

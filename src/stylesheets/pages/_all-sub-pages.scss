@@ -1,9 +1,11 @@
 .page_sub {
   overflow-x: hidden;
 
-  /* _____ BASE _____ */
-  @include media-breakpoint-up(lg) {
-    .sub-page-content {    
+
+
+  /* _____ BASE _____ */ 
+  .sub-page-content {    
+    @include media-breakpoint-up(lg) {
       background: $light-gray;
       padding: 0;
   
@@ -31,9 +33,10 @@
 
 
   /* === Telephones === */
-  @include media-breakpoint-up(lg) {
-    .telephones_masthead {
-      .telephones__number {
+  .telephones_masthead {
+    .telephones__number {
+      @include media-breakpoint-up(lg) {
+
         &:first-child {
           @include underline(transparent);
           @include dotted(bd-bottom(1rem, 3rem, #fff));
@@ -45,6 +48,7 @@
             background-position: bottom;
           }
         }
+
         &:last-child {
           display: none;
         }
@@ -55,9 +59,11 @@
 
   /* === Title === */
   .title {
+
     &__inner {
       padding: 15rem 0 0;
     }
+    
     &__heading {
       font-size: 9.5vw;
       letter-spacing: 0.3em;
