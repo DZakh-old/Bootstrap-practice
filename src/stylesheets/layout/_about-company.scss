@@ -1,4 +1,6 @@
 .about-company {
+  overflow: hidden;
+
   &__content {
     @include media-breakpoint-up(lg) {
       padding: 0 66rem;
