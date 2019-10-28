@@ -1,6 +1,7 @@
-import $ from "jquery";
-$(".burger").click(function() {
-  $(this).toggleClass("active");
-  $('.navigation').toggleClass("active");
-  $('.page').toggleClass("overflow-hidden");
+import $ from 'jquery';
+
+$('.burger').click(() => {
+  $(this).toggleClass('active');
+  $('.navigation').toggleClass('active');
+  $('.page').toggleClass('overflow-hidden');
 });

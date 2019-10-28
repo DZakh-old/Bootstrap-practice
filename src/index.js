@@ -1,24 +1,7 @@
-import "./stylesheets/main.scss";
+import './stylesheets/main.scss';
 
-import "@babel/polyfill";
-import $ from "jquery";
+import '@babel/polyfill';
 
-import 'bootstrap';
-$('.carousel').carousel({
-  interval: 5000,
-  touch: false
-})
-
-
-/* === Helpers === */
-// import {log} from "./js/helpers"
-
-/* === Functions === */
-import "./js/functions/real-vh-height";
-import "./js/functions/burger-menu";
-import "./js/functions/smooth-scroll-to";
-
-/* === Packedges === */
-/* Lazysizes */
-import "lazysizes";
-import "lazysizes/plugins/parent-fit/ls.parent-fit";
+import './js/vendors';
+import './js/functions';
+import './js/packedges';
