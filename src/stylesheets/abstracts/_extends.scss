@@ -8,6 +8,7 @@
 /// Decorative line under heading
 %decorative-line {
   position: relative;
+  padding-bottom: 0.7em;
   &::after {
     content: '';
     display: block;

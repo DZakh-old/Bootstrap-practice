@@ -1,11 +1,10 @@
 .partner {
-  @include center(horizontal);
-  flex-direction: column;
   background: $light-gray;
   padding: 38rem;
+  box-shadow: 0rem 5rem 5rem -4rem rgba(0,0,0,0.3);
 
   &__img-wrap {
-    margin: auto;
+    @include center(horizontal);
   }
   &__photo {
     width: 136rem;
@@ -17,12 +16,13 @@
     text-transform: capitalize;
     font-size: 1.3em;
     letter-spacing: 0.05em;
-    padding-bottom: 0.65em;
+    padding-top: 20rem;
   }
   &__info {
     text-align: justify;
     font-weight: 100;
     font-size: 0.9em;
+    padding-top: 1.2em;
     line-height: 1.4;
   }
 }

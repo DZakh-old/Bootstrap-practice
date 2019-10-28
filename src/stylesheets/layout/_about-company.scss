@@ -1,4 +1,9 @@
 .about-company {
+  &__content {
+    @include media-breakpoint-up(lg) {
+      padding: 0 66rem;
+    }
+  }
   &__text {
     text-align: center;
     padding-top: 50px;
@@ -30,11 +35,5 @@
     font-weight: bold;
     letter-spacing: 0.125em;
     margin: 0 -200rem;
-  }
-  
-  @include media-breakpoint-up(lg) {
-    &__content {
-      padding: 0 66rem;
-    }
   }
 }

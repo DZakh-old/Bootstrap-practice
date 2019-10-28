@@ -1,0 +1,33 @@
+.partners {
+  padding-top: 60rem;
+  padding-bottom: 95rem;
+  @include media-breakpoint-up(md) {
+    padding-bottom: 80rem;
+  }
+
+  &__heading {
+    font-size: 26rem;
+    padding-bottom: 50rem;
+  }
+  &__list {
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-between;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 900px;
+    }
+  }
+  &__card {
+    --gap: 20rem;
+    margin-bottom: 30rem;
+    @include media-breakpoint-up(md) {
+      margin: 0;
+      width: calc(50% - var(--gap, 20px) / 2);
+      
+    }
+    @include media-breakpoint-up(lg) {
+      --gap: 30rem;
+    }
+  }
+}
