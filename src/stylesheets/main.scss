@@ -3,71 +3,34 @@
 /* uncss:ignore start */
 
 // 1. Configuration and helpers
-@import
-  'abstracts/variables',
-  'abstracts/functions',
-  'abstracts/mixins',
-  'abstracts/animations',
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins', 'abstracts/animations',
   'abstracts/extends';
 
 /* uncss:ignore end */
 
 // 2. Vendors
-@import
-  'vendors/normalize',
-  'vendors/bootstrap';
+@import 'vendors/normalize', 'vendors/bootstrap', 'node_modules/custom-border-mixin';
 
 /* uncss:ignore start */
 
 // 3. Base stuff
-@import
-  'base/base',
-  'base/fonts',
-  'base/typography',
-  'base/helpers';
+@import 'base/base', 'base/fonts', 'base/typography', 'base/helpers';
 
 // 4. Layout-related sections
-@import
-  'layout/first',
-  'layout/advantages',
-  'layout/offer',
-  'layout/services',
-  'layout/reviews',
-  'layout/consultation',
-  'layout/contacts',
-  'layout/about-company',
-  'layout/footer';
+@import 'layout/first', 'layout/advantages', 'layout/offer', 'layout/services', 'layout/reviews',
+  'layout/consultation', 'layout/contacts', 'layout/about-company', 'layout/footer';
 
 // 5. Components
-@import
-  'components/masthead',
-  'components/logo',
-  'components/navigation',
-  'components/telephones',
-  'components/burger',
-  'components/title',
-  'components/arrow-to-down',
-  'components/advantage',
-  'components/quote',
-  'components/your-question',
-  'components/our-answer',
-  'components/slider',
-  'components/review',
-  'components/contact-form',
-  'components/references',
-  'components/reference',
-  'components/typography',
-  'components/partners',
-  'components/partner';
+@import 'components/masthead', 'components/logo', 'components/navigation', 'components/telephones',
+  'components/burger', 'components/title', 'components/arrow-to-down', 'components/advantage',
+  'components/quote', 'components/your-question', 'components/our-answer', 'components/slider',
+  'components/review', 'components/contact-form', 'components/references', 'components/reference',
+  'components/typography', 'components/partners', 'components/partner';
 
 // 6. Page-specific styles
-@import
-  'pages/all-sub-pages',
-  'pages/contacts',
-  'pages/about';
+@import 'pages/all-sub-pages', 'pages/contacts', 'pages/about';
 
 // 7. Themes
-@import
-  'themes/default';
+@import 'themes/default';
 
 /* uncss:ignore end */

@@ -2,8 +2,6 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
-
-
 /// Place child img as a full screen background
 @mixin full-screen-bg($safe-bg-color: white) {
   position: relative;
@@ -20,8 +18,6 @@
     z-index: -10;
   }
 }
-
-
 
 /// Center children vertically, horizontally or both
 /// @param {String} $position
@@ -40,15 +36,13 @@
   }
 }
 
-
-
 /// Appearing underline on hover
 /// @param {String} $underline-color
 @mixin underline($underline-color: white) {
   position: relative;
   &::after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     right: 0;
     bottom: 0;
@@ -72,16 +66,12 @@
   }
 }
 
-
-
 /// Works in tandem with the real-vh-height.js function to display sections correctly on mobiles
 /// @param {Number} $height
 @mixin real-vh-height($height: 100) {
   height: #{$height}vh; /* Fallback for browsers that do not support Custom Properties */
   height: calc(var(--vh, 1vh) * #{$height});
 }
-
-
 
 /// Learn more button with transparent bg
 /// @param {Color} $color
@@ -109,73 +99,3 @@
     transform: scale(1.04);
   }
 }
-
-
-
-
-@function bd-top($size: 1px, $gap: 5px, $color: #333) {
-  @return (top, $size, $gap, $color);
-}
-@function bd-right($size: 1px, $gap: 5px, $color: #333) {
-  @return (right, $size, $gap, $color);
-}
-@function bd-bottom($size: 1px, $gap: 5px, $color: #333) {
-  @return (bottom, $size, $gap, $color);
-}
-@function bd-left($size: 1px, $gap: 5px, $color: #333) {
-  @return (left, $size, $gap, $color);
-}
-// @function bd-all($size: 1px, $gap: 5px, $color: #333) {
-//   @return bd-horizontal($size, $gap, $color), bd-vertical($size, $gap, $color);
-// }
-// @function bd-horizontal($size: 1px, $gap: 5px, $color: #333) {
-//   @return bd-right($size, $gap, $color), bd-left($size, $gap, $color);
-// }
-// @function bd-vertical($size: 1px, $gap: 5px, $color: #333) {
-//   @return (top, $size, $gap, $color), (top, $size, $gap, $color);
-// }
-
-
-@mixin dotted($parameters...) {
-  $bg-image-list: ();
-  $bg-position-list: ();
-  $bg-size-list: ();
-  $bg-repeat-list: ();
-
-  @each $side, $size, $gap, $color in $parameters {
-    $section: $size + $gap;
-    $gradient:  $color, $color ($size / $section * 100%), transparent ($size / $section * 100%);
-
-    $bg-image-value: linear-gradient(to right, $gradient);
-    $bg-position-value: 0 100%;
-    $bg-size-value: $section $size;
-    $bg-repeat-value: repeat-x;
-
-    @if $side == 'top' {
-      $bg-position-value: 100% 0;
-      $bg-image-value: linear-gradient(to left, $gradient);
-    } 
-    @if $side == 'right' or $side == 'left' {
-      $bg-repeat-value: repeat-y;
-      $bg-size-value: $size $section;
-      @if $side == 'right' {
-        $bg-position-value: 100% 100%;
-        $bg-image-value: linear-gradient(to top, $gradient);
-      } @else {
-        $bg-position-value: 0 0;
-        $bg-image-value: linear-gradient(to bottom, $gradient);
-      }
-    }
-
-    $bg-image-list: append($bg-image-list, $bg-image-value, 'comma');
-    $bg-size-list: append($bg-size-list, $bg-size-value, 'comma');
-    $bg-position-list: append($bg-position-list, $bg-position-value, 'comma');
-    $bg-repeat-list: append($bg-repeat-list, $bg-repeat-value, 'comma');
-  }
-
-  background-image: $bg-image-list;
-  background-size: $bg-size-list;
-  background-position: $bg-position-list;
-  background-repeat: $bg-repeat-list;
-}
-//https://github.com/wildhaber/empty-state/blob/master/src/shapes.mixin.scss

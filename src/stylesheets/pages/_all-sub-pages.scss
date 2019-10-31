@@ -1,14 +1,10 @@
 .page_sub {
-  overflow-x: hidden;
-
-
-
-  /* _____ BASE _____ */ 
-  .sub-page-content {    
+  /* _____ BASE _____ */
+  .sub-page-content {
     @include media-breakpoint-up(lg) {
       background: $light-gray;
       padding: 0;
-  
+
       & .container {
         max-width: 1030rem;
         padding: 53rem 100rem 63rem 115rem;
@@ -18,8 +14,6 @@
       }
     }
   }
-
-
 
   /* _____ FIRST _____ */
   .first {
@@ -31,21 +25,18 @@
     }
   }
 
-
   /* === Telephones === */
   .telephones_masthead {
     .telephones__number {
       @include media-breakpoint-up(lg) {
-
         &:first-child {
           @include underline(transparent);
-          @include dotted(bd-bottom(1rem, 3rem, #fff));
+          @include custom-border(dotted(bottom, 1rem, 3rem, #fff, _, center));
           transition: all 0.3s;
 
           &:hover,
           &:focus {
-            @include dotted(bd-bottom(2rem, 6rem, #fff));
-            background-position: bottom;
+            @include custom-border(dotted(bottom, 2rem, 6rem, #fff, _, center));
           }
         }
 
@@ -56,14 +47,12 @@
     }
   }
 
-
   /* === Title === */
   .title {
-
     &__inner {
       padding: 15rem 0 0;
     }
-    
+
     &__heading {
       font-size: 9.5vw;
       letter-spacing: 0.3em;
@@ -74,7 +63,6 @@
       }
     }
   }
-
 
   /* === Arrow-to-down === */
   .arrow-to-down {

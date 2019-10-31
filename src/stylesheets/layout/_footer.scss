@@ -12,17 +12,15 @@
   }
 
   &__confidentiality {
-    
     &-link {
-      @include dotted((bottom, 1rem, 3rem, #fff));
       margin-right: auto;
       padding: 0.16em 0;
+      @include custom-border(dotted(bottom, 1rem, 3rem, #fff, _, center));
       transition: all 0.3s;
 
       &:hover,
       &:focus {
-        @include dotted((bottom, 1.5rem, 5rem, #fff));
-        background-position: bottom;
+        @include custom-border(dotted(bottom, 2rem, 6rem, #fff, _, center));
       }
     }
   }

@@ -1,5 +1,7 @@
 .about-company {
-  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    overflow: hidden;
+  }
 
   &__content {
     @include media-breakpoint-up(lg) {
@@ -41,5 +43,9 @@
     font-weight: bold;
     letter-spacing: 0.125em;
     margin: 0 -300rem;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
   }
 }
